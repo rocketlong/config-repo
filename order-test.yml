@@ -9,7 +9,7 @@ spring:
   jpa:
     show-sql: true
 env:
-  test11
+  test22
 girl:
   name: haha
-  age: 11
+  age: 22
