@@ -4,5 +4,10 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://192.168.25.132:3306/sell?characterEncoding=UTF-8&useSSL=false
+  rabbitmq:
+    addresses: 192.168.25.128
+    port: 5672
+    username: guest
+    password: guest
   jpa:
     show-sql: true
