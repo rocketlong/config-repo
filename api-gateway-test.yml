@@ -1,0 +1,20 @@
+zuul:
+  routes:
+  # 第一种写法
+    aaaa:
+      path: /myProduct/**
+      serviceId: product
+      # 敏感头的过滤 会把 "Cookie", "Set-Cookie", "Authorization" 这些前端传回的这些过滤掉 如要接收测需要加上下面的的配置
+      sensitiveHeaders:
+  # 第二种写法
+#    product: /myProduct/**
+  ignored-patterns:
+    - /**/product/listForOrder
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
