@@ -8,8 +8,8 @@ zuul:
       sensitiveHeaders:
   # 第二种写法
 #    product: /myProduct/**
-  ignored-patterns:
-    - /**/product/listForOrder
+#  ignored-patterns:
+#    - /**/product/listForOrder
 ribbon:
   ReadTimeout: 60000
   ConnectTimeout: 60000
