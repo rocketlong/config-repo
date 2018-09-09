@@ -19,6 +19,8 @@ management:
       exposure:
         include: "*"
 spring:
+  application:
+    name: api-gateway
   rabbitmq:
     addresses: 192.168.25.128
     port: 5672
