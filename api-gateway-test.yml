@@ -1,4 +1,6 @@
 zuul:
+  # 全部服务忽略敏感头，都可以传递 "Cookie", "Set-Cookie", "Authorization"
+  sensitive-headers: 
   routes:
   # 第一种写法
     aaaa:
