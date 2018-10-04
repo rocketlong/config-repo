@@ -18,8 +18,8 @@ zuul:
   ignored-patterns:
     - /**/product/listForOrder
 ribbon:
-  ReadTimeout: 60000
-  SocketTimeout: 60000
+  ReadTimeout: 5000
+  SocketTimeout: 5000
 management:
   endpoints:
     web:
